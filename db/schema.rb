@@ -10,7 +10,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110730214626) do
+ActiveRecord::Schema.define(:version => 20110730224125) do
+
+  create_table "clients", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.integer  "barcode_id"
+    t.datetime "member_since"
+    t.string   "phone",         :limit => 25
+    t.string   "email",         :limit => 100
+    t.string   "trainer_notes", :limit => 250
+    t.integer  "client_type"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "uid"

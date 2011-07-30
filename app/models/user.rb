@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :clients
+
   def self.create_with_omniauth(auth)
     begin
       create! do |user|
