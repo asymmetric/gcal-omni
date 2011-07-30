@@ -1,4 +1,6 @@
 GcalOmni::Application.routes.draw do
+  resources :clients
+
   root to: 'home#index'
 
   controller :sessions do

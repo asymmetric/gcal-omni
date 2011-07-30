@@ -1,0 +1,28 @@
+%h1 Clients
+
+%table
+  %tr
+    %th First name
+    %th Last name
+    %th Barcode
+    %th Member since
+    %th Phone
+    %th Email
+    %th Trainer notes
+
+  - @clients.each do |client|
+    %tr
+      %td= client.first_name
+      %td= client.last_name
+      %td= client.barcode_id
+      %td= client.member_since
+      %td= client.phone
+      %td= client.email
+      %td= client.trainer_notes
+      %td= link_to 'Show', client
+      %td= link_to 'Edit', edit_client_path(client)
+      %td= link_to 'Destroy', client, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Client', new_client_path

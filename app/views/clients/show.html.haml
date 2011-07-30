@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+  %b First name:
+  = @client.first_name
+%p
+  %b Last name:
+  = @client.last_name
+%p
+  %b Barcode:
+  = @client.barcode_id
+%p
+  %b Member since:
+  = @client.member_since
+%p
+  %b Phone:
+  = @client.phone
+%p
+  %b Email:
+  = @client.email
+%p
+  %b Trainer notes:
+  = @client.trainer_notes
+
+= link_to 'Edit', edit_client_path(@client)
+\|
+= link_to 'Back', clients_path
