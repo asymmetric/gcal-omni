@@ -76,15 +76,6 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mailcatcher (0.5.1)
-      activesupport (~> 3.0)
-      eventmachine (~> 0.12)
-      haml (~> 3.1)
-      mail (~> 2.3)
-      sinatra (~> 1.2)
-      skinny (~> 0.1)
-      sqlite3 (~> 1.3)
-      thin (~> 1.2)
     mime-types (1.16)
     multi_json (1.0.3)
     multi_xml (0.2.2)
@@ -157,12 +148,6 @@ GEM
       railties (~> 3.1.0.rc1)
       sass (>= 3.1.4)
       sprockets (>= 2.0.0.beta.9)
-    sinatra (1.2.6)
-      rack (~> 1.1)
-      tilt (>= 1.2.2, < 2.0)
-    skinny (0.1.2)
-      eventmachine
-      thin
     sprockets (2.0.0.beta.12)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -190,7 +175,6 @@ DEPENDENCIES
   edave-gcal4ruby
   haml-rails
   jquery-rails
-  mailcatcher
   oa-oauth
   rails (= 3.1.0.rc5)
   rspec-rails
