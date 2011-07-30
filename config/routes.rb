@@ -1,7 +1,7 @@
 GcalOmni::Application.routes.draw do
   controller :sessions do
     get '/login' => :new, as: 'login'
-    post '/auth/google/callback' => :create, as: 'signup'
+    get '/auth/google/callback' => :create, as: 'signup'
     get '/auth/failure' => :failure
     get '/signout' => :destroy, as: 'signout'
   end
