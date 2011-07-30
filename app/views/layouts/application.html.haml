@@ -1,0 +1,12 @@
+!!! 5
+%html
+  %head
+    %title EQUINOX Personal Trainer App
+    = csrf_meta_tags
+
+  %body
+    - flash.each do |type, msg|
+      %div{ :class => type }
+        = msg
+
+    = yield
