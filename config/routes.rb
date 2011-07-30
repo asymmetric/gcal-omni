@@ -2,10 +2,10 @@ GcalOmni::Application.routes.draw do
   root to: 'home#index'
 
   controller :sessions do
-    get '/login' => :new, as: 'login'
-    get '/auth/google/callback' => :create, as: 'signup'
-    get '/auth/failure' => :failure
-    get '/signout' => :destroy, as: 'signout'
+    get 'login' => :new, as: 'login'
+    get 'auth/google/callback' => :create, as: 'signup'
+    get 'auth/failure' => :failure
+    get 'logout' => :destroy, as: 'logout'
   end
 
   # The priority is based upon order of creation:
