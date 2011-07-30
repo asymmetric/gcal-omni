@@ -15,7 +15,7 @@ end
 
 gem 'jquery-rails'
 gem 'haml-rails'
-gem 'omniauth'
+gem 'oa-oauth'
 gem 'edave-gcal4ruby'
 gem 'thin'
 
