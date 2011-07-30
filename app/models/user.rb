@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  def create_with_omniauth(auth)
+  def self.create_with_omniauth(auth)
     begin
       create! do |user|
         user.uid = auth['uid']
