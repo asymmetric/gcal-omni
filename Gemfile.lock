@@ -65,11 +65,16 @@ GEM
       activesupport (~> 3.0)
       haml (~> 3.0)
       railties (~> 3.0)
+    heroku (2.4.0)
+      launchy (>= 0.3.2)
+      rest-client (~> 1.6.1)
+      term-ansicolor (~> 1.0.5)
     hike (1.2.0)
     i18n (0.6.0)
     jquery-rails (1.0.12)
       railties (~> 3.0)
       thor (~> 0.14)
+    launchy (2.0.3)
     linecache19 (0.5.12)
       ruby_core_source (>= 0.1.4)
     mail (2.3.0)
@@ -119,6 +124,8 @@ GEM
       thor (~> 0.14.6)
     rake (0.9.2)
     rdoc (3.8)
+    rest-client (1.6.3)
+      mime-types (>= 1.16)
     rspec (2.6.0)
       rspec-core (~> 2.6.0)
       rspec-expectations (~> 2.6.0)
@@ -153,6 +160,7 @@ GEM
       rack (~> 1.0)
       tilt (!= 1.3.0, ~> 1.1)
     sqlite3 (1.3.4)
+    term-ansicolor (1.0.6)
     thin (1.2.11)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -174,6 +182,7 @@ DEPENDENCIES
   coffee-rails (~> 3.1.0.rc)
   edave-gcal4ruby
   haml-rails
+  heroku
   jquery-rails
   oa-oauth
   rails (= 3.1.0.rc5)
