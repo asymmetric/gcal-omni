@@ -9,6 +9,8 @@
       %div{ :class => type }
         = msg
 
-    = session_bar
+    - if logged_in?
+      Welcome, #{current_user.name}
+      = link_to 'Log out', logout_url
 
     = yield
