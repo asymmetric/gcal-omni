@@ -1,5 +1,9 @@
 module ApplicationHelper
   def session_bar
-    link_to 'Log out', logout_url if logged_in?
+    if logged_in?
+      "Welcome, #{current_user.name}"
+    else
+      link_to 'Log out', logout_url
+    end
   end
 end
